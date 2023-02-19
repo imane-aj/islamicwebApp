@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+p{
+  text-align: justify;
+}
 .hero h1{
     font-size: 2em;
 }
@@ -20,8 +23,9 @@ body{
     background-image: url('./assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh; */
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 /* NavBar */

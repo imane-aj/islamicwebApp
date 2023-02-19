@@ -19,17 +19,8 @@ Muhammad continued to lead the Islamic community until his death in 632 CE. He i
 
 </p>
 <p>
-The Quran is the central religious text of Islam, and contains the words of God as revealed to the Prophet Muhammad through the Angel Gabriel. It is the primary source of Islamic law and ethics, and is considered the final revelation from God to humanity. Some verses from the Quran that are commonly referenced in Islamic discourse include:
 
-"There is no god but Allah, and Muhammad is his messenger" (Quran 48:29)
-"Allah does not burden a soul beyond that it can bear" (Quran 2:286)
-"O you who have believed, enter into Islam completely [and perfectly] and do not follow the footsteps of Satan" (Quran 2:208)
-The Hadith, on the other hand, is a collection of sayings, actions, and teachings of the Prophet Muhammad, compiled by his companions and later scholars. It serves as a secondary source of Islamic law and ethics, and is used to provide context and interpretation to the Quran. Some Hadiths that are commonly referenced in Islamic discourse include:
 
-"The best of you are those who are best to their families" (Bukhari)
-"None of you truly believes until he loves for his brother what he loves for himself" (Bukhari)
-"Whoever believes in Allah and the Last Day, let him speak good or remain silent" (Muslim)
-Both the Quran and Hadith are considered essential sources of guidance for Muslims, and are studied and referenced extensively in Islamic scholarship and discourse.
 
 
 

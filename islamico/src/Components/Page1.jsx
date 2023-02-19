@@ -53,6 +53,39 @@ export const Page1 = () => {
         with the development of great cities like Baghdad and Cairo, and the establishment of universities
         and centers of learning.
     </p>
+    <div className='grid gap-24 grid-cols-2'>
+      <div>
+        <h2>Quran</h2>
+        <p>
+          The Quran is the central religious text of Islam, and contains the words of God as revealed to the Prophet
+          Muhammad through the Angel Gabriel. It is the primary source of Islamic law and ethics, and is considered 
+          the final revelation from God to humanity. Some verses from the Quran that are commonly referenced in 
+          Islamic discourse include:
+
+          <ul>
+            <li> "There is no god but Allah, and Muhammad is his messenger" (Quran 48:29)</li>
+            <li> "Allah does not burden a soul beyond that it can bear" (Quran 2:286)</li>
+            <li>"O you who have believed, enter into Islam completely [and perfectly] and do not follow the footsteps of 
+          Satan" (Quran 2:208)</li>
+          </ul>
+        </p>
+      </div>
+      <div>
+        <h2>Hadith</h2>
+        <p>
+        The Hadith, on the other hand, is a collection of sayings, actions, and teachings of the Prophet Muhammad, 
+        compiled by his companions and later scholars. It serves as a secondary source of Islamic law and ethics, and
+         is used to provide context and interpretation to the Quran. Some Hadiths that are commonly referenced in 
+         Islamic discourse include:
+        <ul>
+          <li>"The best of you are those who are best to their families" (Bukhari)</li>
+          <li>"None of you truly believes until he loves for his brother what he loves for himself" (Bukhari)</li>
+          <li>"Whoever believes in Allah and the Last Day, let him speak good or remain silent" (Muslim)</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    Both the Quran and Hadith are considered essential sources of guidance for Muslims, and are studied and referenced extensively in Islamic scholarship and discourse.
 </div>
   )
 }

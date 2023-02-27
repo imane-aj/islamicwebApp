@@ -21,15 +21,15 @@ export const MainMenu = () => {
           relative overflow-hidden z-10 before:content-[''] before:w-[0%] before:h-[800%] before:absolute before:top-[50%] before:left-[50%] before:-translate-y-1/2 before:-translate-x-1/2 before:rotate-45 before:bg-gray-200 before:transition-all before:duration-250 before:-z-10 hover:before:w-[105%]"
               id="panel" onClick={()=>{dispatch(PageNum(idx+1)) ;dispatch(toggle())}}
             >
-            <div className="text-lg short:hidden md:text-3xl font-semibold text-custom-1 2xl:block">
-              <span className="mr-1"><img src={item?.img} class="img-fluid mx-auto text-custom-1" width='50px' alt="icon" /></span>
+            <div className="text-lg md:text-3xl font-semibold text-custom-1 2xl:block">
+              <span className="mr-1"><img src={item?.img} className="mt-4" width='50px' alt="icon" /></span>
             </div>
-            <div className="border-l h-[70%] border-custom-900 pb-1 short:hidden hidden 2xl:block"></div>
+            <div className="border-l h-[70%] border-custom-900 pb-1 2xl:block"></div>
             <div className="h-[80%] short:h-auto">
               <h1 className="short:text-base short:break-all text-lg text-custom-1 font-bold tracking-tighter ">
                 {item.title}
               </h1>
-              <span className="short:hidden hidden lg:inline-block text-sm font-bold">
+              <span className=" hidden lg:inline-block text-sm font-bold pr-1">
                 {item.desc.map((item,idx)=>(
                   <p className="text-slate-600" key = {idx}>{item}</p>
                 ))}

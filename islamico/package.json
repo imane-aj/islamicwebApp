@@ -12,7 +12,8 @@
     "@material-tailwind/react": "^1.4.2",
     "@reduxjs/toolkit": "^1.9.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^7.2.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import mainMenuData from './../Utils/MainMenu';
 import { useDispatch, useSelector } from "react-redux";
 import {  PageNum, toggle } from '../Redux/ToggleSlice';
+import { Bukhari } from '../Components/HadithBukhari/Bukhari';
 
 export const MainMenu = () => {
     const dispatch = useDispatch()
     const pageNum = useSelector((state)=>state.toggle.num)
     console.log(pageNum)
   return (
+    <Fragment>
+      <Bukhari />
     <div
-      className="flex flex-col gap-3 mx-auto absolute 
+      className="flex flex-col gap-3 mx-auto md:absolute 
         inset-x-1 md:inset-x-12 lg:inset-x-1 bottom-0 m-3 mb-5 px-3 lg:flex-row lg:items-center
         lg:h-3264 animate-slideToTop short:flex-row"
             >
@@ -38,5 +41,6 @@ export const MainMenu = () => {
         </div>
         ))}
     </div>
+    </Fragment>
   )
 }

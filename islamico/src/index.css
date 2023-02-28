@@ -8,8 +8,8 @@ p{
 .hero h1{
     font-size: 2em;
 }
-.hero .history{
-    background-color: #ffffff99;
+.hero .history, .AllHadith{
+    background-color: #ffffffe6;
 }
 .hero .history .span:before {
     content: "▹";

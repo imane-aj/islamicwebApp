@@ -10,7 +10,48 @@ export const MainMenu = () => {
     console.log(pageNum)
   return (
     <Fragment>
-      <Bukhari />
+      {/* <Bukhari /> */}
+      <div className='index'>
+        <div className="container grid gap-4 grid-cols-2">
+          <div class="col col-lg-7 slide-caption">
+            <div class="slide-top">
+              <span>Let’s Know Islam</span>
+            </div>
+            <div class="slide-title">
+              <h2>Read! In the Name of your Lord, Who has created</h2>
+            </div>
+            <div class="slide-subtitle">
+              <p>We are the best Educational Organization.Let’s know about Islam  And the holy Quran!</p>
+            </div>
+            <div class="btns">
+              <a class="theme-btn" href="/about">Discover More</a>
+            </div>
+          </div>
+          <div className="right-vec w-50 mt-10 justify-items-end">
+              <img src={"/indexImg/img-3.44bb17a6.png"} style={{'width': '21em'}} alt="" />
+              <div className="right-border">
+                  <div className="right-icon">
+                      <img src={"/indexImg/quran.png"} />
+                  </div>
+                  <div className="right-icon">
+                      <img src={"/indexImg/tajMahal.png"} />
+                  </div>
+                  <div className="right-icon">
+                      <img src={"/indexImg/allah.png"} />
+                  </div>
+                  <div className="right-icon">
+                      <img src={"/indexImg/muhammed.png"} />
+                  </div>
+                  <div className="right-icon">
+                      <img src={"/indexImg/salah.png"} />
+                  </div>
+                  <div className="right-icon">
+                      <img src="/indexImg/sadaqa.png" />
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
     <div
       className="flex flex-col gap-3 mx-auto md:absolute 
         inset-x-1 md:inset-x-12 lg:inset-x-1 bottom-0 m-3 mb-5 px-3 lg:flex-row lg:items-center

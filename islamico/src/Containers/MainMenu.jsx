@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import mainMenuData from './../Utils/MainMenu';
 import { useDispatch, useSelector } from "react-redux";
 import {  PageNum, toggle } from '../Redux/ToggleSlice';
-import { Bukhari } from '../Components/HadithBukhari/Bukhari';
 
 export const MainMenu = () => {
     const dispatch = useDispatch()
@@ -11,23 +10,23 @@ export const MainMenu = () => {
   return (
     <Fragment>
       {/* <Bukhari /> */}
-      <div className='index'>
-        <div className="container grid gap-4 grid-cols-2">
-          <div class="col col-lg-7 slide-caption">
-            <div class="slide-top">
+      <div className='index container mx-3 md:mx-auto  md:w-4/5'>
+        <div className="flex flex-row justify-between">
+          <div className="slide-caption">
+            <div className="slide-top">
               <span>Let’s Know Islam</span>
             </div>
-            <div class="slide-title">
+            <div className="slide-title md:max-w-2xl  md:text-6xl text-5xl">
               <h2>Read! In the Name of your Lord, Who has created</h2>
             </div>
-            <div class="slide-subtitle">
-              <p>We are the best Educational Organization.Let’s know about Islam  And the holy Quran!</p>
+            <div className="slide-subtitle">
+              <p></p>
             </div>
-            <div class="btns">
-              <a class="theme-btn" href="/about">Discover More</a>
+            <div className="btns">
+              <a className="theme-btn" href="/about">Discover history of islam</a>
             </div>
           </div>
-          <div className="right-vec w-50 mt-10 justify-items-end">
+          <div className="right-vec md:mt-9 mt-4 justify-content-center md:block hidden">
               <img src={"/indexImg/img-3.44bb17a6.png"} style={{'width': '21em'}} alt="" />
               <div className="right-border">
                   <div className="right-icon">
@@ -50,7 +49,7 @@ export const MainMenu = () => {
                   </div>
               </div>
           </div>
-          </div>
+        </div>
       </div>
     <div
       className="flex flex-col gap-3 mx-auto md:absolute 

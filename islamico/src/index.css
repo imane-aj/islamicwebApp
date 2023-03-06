@@ -29,7 +29,7 @@
     margin-bottom: 30px;
 }
 .index .slide-caption h2 {
-  font-size: 50px;
+  /* font-size: 50px; */
   margin: 0 0 0.45em;
   font-weight: 500;
   line-height: 1.2;
@@ -147,7 +147,7 @@
 }
 
 .index .right-vec{
-  width: 50%;
+  /* width: 50%; */
   position: relative;
 }
 .index img{

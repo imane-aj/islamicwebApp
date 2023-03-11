@@ -26,10 +26,11 @@ module.exports = withMT({
       colors: {
         custom: {
           900: "#1E1E1E",
-          1:"#be9b2d"
+          1:"#c65012"
         },
         gray: {
           150: "#F2F2F2",
+          1:'#fefefe'
         },
         lightgray: {
           100: "#eee",
@@ -37,7 +38,7 @@ module.exports = withMT({
         konfigear: {
           100: "#330099",
           200: "#720094",
-        },
+        }
       },
       borderRadius: {
         large: "25px",

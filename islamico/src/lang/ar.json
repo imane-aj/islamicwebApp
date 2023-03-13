@@ -1,0 +1,36 @@
+{
+    "ar" : "العربية",
+    "en" : "الانجليزية",
+    "titleLandingP" : "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ * خَلَقَ الْإِنْسَانَ مِنْ عَلَقٍ * اقْرَأْ وَرَبُّكَ الْأَكْرَمُ * الَّذِي عَلَّمَ بِالْقَلَمِ * عَلَّمَ الْإِنْسَانَ مَا لَمْ يَعْلَمْ",
+    "menuItems": [
+        {
+            "id": 1,
+          "title": "تاريخ الإسلام",
+          "desc": ["السنوات الأولى للإسلام حتى نموه وتوسعه"],
+          "img": "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-1.svg"
+        },
+        {
+            "id": 2,
+          "title": "النبي محمد",
+          "desc": ["صلى الله عليه وسلم"],
+          "img": "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-5.svg"
+        },
+        {
+            "id": 3,
+          "title": " الأصول الثلاثة",
+          "desc": ["الشيخُ محمد بن عبد الوهاب"],
+          "img" : "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/ear.svg"
+        },
+        {
+            "id": 4,
+          "title": " الصحيحين",
+          "desc": ["البخاري ومسلم"],
+          "img" : "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-3.svg"
+        }
+      ],
+    "backToHome" : "الصفحة الرئيسية",
+    "islamicH": "تاريخ الإسلام",
+    "prophetMuh": "النبي محمد",
+    "ThreeFund": " الأصول الثلاثة",
+    "Sahih": " الصحيحين"
+}

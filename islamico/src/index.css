@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .index{
   /* background: url('/indexImg/bg.73a4c602.png') no-repeat 50%/cover; */
   /* z-index: 1;
@@ -37,21 +42,23 @@
   color: #062265;
 }
 .index .theme-btn {
-  background: -webkit-gradient(linear,right top,left top,from(#be9b2d),to(#fadb75));
+  /* background: -webkit-gradient(linear,right top,left top,from(#be9b2d),to(#fadb75));
   background: -webkit-linear-gradient(right,#be9b2d,#fadb75);
   background: -webkit-linear-gradient(270deg,#be9b2d,#fadb75);
   background: -webkit-gradient(linear,left top,right top,from(#be9b2d),to(#fadb75));
-  background: linear-gradient(270deg,#be9b2d,#fcd861);
-  color: #fff;
+  background: linear-gradient(270deg,#be9b2d,#fcd861); */
+  color: #be9b2d;
   display: inline-block;
   font-weight: 500;
   padding: 13px 30px;
-  border: 0;
+  border: 1px solid;
   border-radius: 55px;
   text-transform: capitalize;
-  box-shadow: 0 0 0 5px #c8eaf5;
+  /* box-shadow: 0 0 0 5px #c8eaf5; */
   -webkit-backface-visibility: hidden;
   z-index: 1;
+  overflow: hidden;
+  display: flex;
 }
 /* .index .right-border {
   position: absolute;
@@ -168,16 +175,28 @@ p{
     position: absolute;
     top: 4px;
 }
-body{
+.bg-imgEn{
     /* background-image: url('./assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; */
-    background: url('/indexImg/5268821.jpg') no-repeat 50%/cover; 
-    /* background-size: cover; */
+    background: url('/indexImg/bgEn.jpg') no-repeat; 
+    background-size: cover;
     overflow-x: hidden;
     /* background-color: #edfdf6; */
+    background-position: center;
+    /* background-color: #edfdf6; */
     /* #f8f8f8 */
+}
+.bg-imgAr{
+  direction: rtl;
+  background: url('/indexImg/bgAr.jpg') no-repeat;
+  background-size: cover;
+    overflow-x: hidden; 
+    background-position: center;
+}
+.mainMenuData{
+  direction: ltr !important;
 }
 
 /* NavBar */
@@ -254,17 +273,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .modal{
-  background: url('/indexImg/modal.png') no-repeat 50%/cover; 
   width: clamp(50%, 700px, 90%);
-  height: min(50%, 300px);
+  height: 100%;
+  background-color: #fff;
   margin: auto;
   padding: 0 2rem;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden !important;
 }
 
 figcaption {

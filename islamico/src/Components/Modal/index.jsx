@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import Backdrop from '../Backdrop'
+import Pdf from './Pdf'
 
 const dropIn = {
     hidden:{
@@ -27,8 +28,8 @@ const Modal = ({handleClose, text}) => {
         <motion.div onClick={(e)=>e.stopPropagation()} className='modal'
           drag varients={dropIn} initial='hidden' animate='visible' exit='exit'
         >
-            <p>{text}</p>
-            <button onClick={handleClose}>Close</button>
+            <button onClick={handleClose} className='border border-custom-1 rounded-full px-1 mt-5'><i class="fa-regular fa-circle-xmark"></i></button>
+            <Pdf />
         </motion.div>
     </Backdrop>
   )

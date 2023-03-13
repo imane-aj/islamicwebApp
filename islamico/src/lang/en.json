@@ -1,0 +1,36 @@
+{
+    "ar" : "Arabic",
+    "en" : "English",
+    "titleLandingP" : "Read! In the Name of your Lord, Who has created",
+    "menuItems": [
+        {
+            "id": 1,
+          "title": "Histoy of Islam",
+          "desc": ["EARLY YEARS OF ISLAM UNTIL IT GROWTH AND EXPANSION"],
+          "img": "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-1.svg"
+        },
+        {
+            "id": 2,
+          "title": "PROPHET MUHAMMAD",
+          "desc": ["MAY GOD BLESS HIM AND GRANT HIM PEACE"],
+          "img": "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-5.svg"
+        },
+        {
+            "id": 3,
+          "title": "THE THREE FUNDAMENTALS",
+          "desc": ["AUTHORED BY SHIEKH BIN ABDUL WAHHAB"],
+          "img" : "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/ear.svg"
+        },
+        {
+            "id": 4,
+          "title": "SAHIH",
+          "desc": ["BUKHARI AND MUSLIM"],
+          "img" : "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-3.svg"
+        }
+      ],
+    "backToHome" : "Back to Home",
+    "islamicH": "Histoy of Islam",
+    "prophetMuh":"PROPHET MUHAMMAD",
+    "ThreeFund": "THE THREE FUNDAMENTALS",
+    "Sahih": " SAHIH"
+}

@@ -1,38 +1,38 @@
 import React, { Fragment } from 'react'
 import { useDispatch } from 'react-redux';
+import menuItemsAr from '../../lang/ar.json'
+import menuItemsEn from '../../lang/en.json'
 
-export const IslamHistory = () => {
+export const IslamHistory = ({t, i18n}) => {
   const dispatch = useDispatch()
+
+  const mainMenuData = (i18n.language === 'ar') 
+  ? menuItemsAr.islamicHcycle.map(item => ({
+    'id' : item.id,
+    'title' : item.title,
+    'desc' : item.desc
+  }))
+  : menuItemsEn.islamicHcycle.map(item => ({
+    'id' : item.id,
+    'title' : item.title,
+    'desc' : item.desc
+  }));
   return (
     <Fragment>
       <div>
-        <p>
-          Islam is a monotheistic religion that was founded by the Prophet Muhammad in the 7th century CE.
-          The history of Islam is rich and complex, and spans over a millennium.
-        </p><br />
-        <p><span className='span text-custom-1 relative ml-4'></span>The Early Years of Islam:</p>
-        <p>
-          Islam began in the Arabian Peninsula, in the city of Mecca, where the Prophet Muhammad was born in 570 CE.
-          Muhammad began receiving revelations from God through the Angel Gabriel when he was 40 years old,
-          and these revelations were later compiled into the Islamic holy book, the Quran. Muhammad preached
-          the message of Islam to the people of Mecca, but was met with resistance from the powerful tribes of the city.
-          He eventually fled to Medina, a city to the north, in what is known as the Hijra, and established the first Islamic
-          state. This event is considered the beginning of the Islamic calendar.
-        </p><br />
-        <p><span className='span text-custom-1 relative ml-4'></span>The Growth and Expansion of Islam:</p>
-        <p>
-          After the establishment of the Islamic state in Medina, Islam spread rapidly throughout Arabia and
-          beyond. Within a century of the death of the Prophet Muhammad in 632 CE, Islamic armies had conquered
-          much of the Middle East, North Africa, and Spain. Islamic civilization flourished during this time,
-          with the development of great cities like Baghdad and Cairo, and the establishment of universities
-          and centers of learning.
-        </p>
+        <p>{t('islamicHintro')}</p><br />
+        {mainMenuData.map((item, idx)=>(
+          <Fragment>
+            <p><span className='span text-custom-1 relative ml-4'></span>{item.title}</p>
+            <p>{item.desc}</p><br />
+          </Fragment>
+        ))}
       </div>
       <div className='flex flex-col md:flex-row md:justify-between my-6'>
         <div className='p-3 md:mr-3 md:mb-0 mb-3 md:w-[%70]'>
           <figure className='border rounded-md border-gray-300 p-2'>
-            <img src={'/indexImg/high-angle-holy-book-with-bracelet.jpg'}
-                alt="Elephant at sunset" />
+            {/* <img src={'/indexImg/high-angle-holy-book-with-bracelet.jpg'}
+                alt="Elephant at sunset" /> */}
             <figcaption className='text-xs text-gray-200'>
               <h2>Quran</h2>
               <p>
@@ -53,8 +53,8 @@ export const IslamHistory = () => {
         </div>
         <div className='p-3 md:w-[%80]'>
           <figure className='border rounded-md border-gray-300 md:p-2'>
-            <img src={'/indexImg/top-view-beautiful-rpg-still-life-items.webp'}
-                alt="Elephant at sunset" />
+            {/* <img src={'/indexImg/top-view-beautiful-rpg-still-life-items.webp'}
+                alt="Elephant at sunset" /> */}
             <figcaption className='text-xs text-gray-200'>
               <h2>Hadith</h2>
               <p>

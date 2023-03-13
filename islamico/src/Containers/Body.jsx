@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { toggle } from "../Redux/ToggleSlice";
 import { IslamHistory } from "./../Components/IslamHistory/index";
 import ThreeFund from "./../Components/ThreeFund/index";
+import i18n from './../i18n';
 
 export const Body = ({t}) => {
   const pageNum = useSelector((state) => state.toggle.num);
@@ -48,7 +49,7 @@ export const Body = ({t}) => {
             </h1>
           </div>
         </div>
-        {pageNum == 1 && <IslamHistory />}
+        {pageNum == 1 && <IslamHistory t={t} i18n={i18n}/>}
         {pageNum == 3 && <ThreeFund />}
       </div>
     </div>

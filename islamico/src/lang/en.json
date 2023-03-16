@@ -5,7 +5,7 @@
     "menuItems": [
         {
             "id": 1,
-          "title": "Histoy of Islam",
+          "title": "HISTORY OF ISLAM",
           "desc": ["EARLY YEARS OF ISLAM UNTIL IT GROWTH AND EXPANSION"],
           "img": "https://www.guidetosunnah.com/themes/midade/frontend/guidetosunna/assets/images/is-icon-1.svg"
         },
@@ -38,12 +38,39 @@
       {
         "id":1,
         "title" : "The Early Years of Islam:",
-        "desc" : " Islam began in the Arabian Peninsula, in the city of Mecca, where the Prophet Muhammad was born in 570 CE. Muhammad began receiving revelations from God through the Angel Gabriel when he was 40 years old, and these revelations were later compiled into the Islamic holy book, the Quran. Muhammad preached the message of Islam to the people of Mecca, but was met with resistance from the powerful tribes of the city. He eventually fled to Medina, a city to the north, in what is known as the Hijra, and established the first Islamic state. This event is considered the beginning of the Islamic calendar."
+        "desc" : " Islam began in the Arabian Peninsula, in the city of Mecca, where the Prophet Muhammad was born in 570 CE. Muhammad may God bless him and grant him peace, began receiving revelations from God through the Angel Gabriel when he was 40 years old, and these revelations were later compiled into the Islamic holy book, the Quran. Muhammad peace and blessings be upon him, preached the message of Islam to the people of Mecca, but was met with resistance from the powerful tribes of the city. He eventually fled to Medina, a city to the north, in what is known as the Hijra, and established the first Islamic state. This event is considered the beginning of the Islamic calendar."
       },
       {
         "id":2,
         "title" : "The Growth and Expansion of Islam:",
         "desc" : "  After the establishment of the Islamic state in Medina, Islam spread rapidly throughout Arabia and beyond. Within a century of the death of the Prophet Muhammad in 632 CE, Islamic armies had conquered much of the Middle East, North Africa, and Spain. Islamic civilization flourished during this time,  with the development of great cities like Baghdad and Cairo, and the establishment of universities  and centers of learning."
       }
-    ]
-}
+    ],
+    "islamicHEss" : [
+      {
+        "id":1,
+        "title": "Quran",
+        "img": "high-angle-holy-book-with-bracelet.jpg",
+        "desc": "The Quran is the central religious text of Islam, and contains the words of God as revealed to the Prophet Muhammad through the Angel Gabriel. It is the primary source of Islamic law and ethics, and is considered  the final revelation from God to humanity. Some verses from the Quran that are commonly referenced in  Islamic discourse include:",
+        "include": [
+          "'There is no god but Allah, and Muhammad is his messenger' (Quran 48:29)",
+          "'Allah does not burden a soul beyond that it can bear' (Quran 2:286)",
+          "'O believers! Enter into Islam wholeheartedly and do not follow Satan’s footsteps. Surely he is your sworn enemy' (Quran 2:208)"
+        ]
+      },
+      {
+        "id":2,
+        "img": "top-view-beautiful-rpg-still-life-items.webp",
+        "title": "Hadith",
+        "desc": "The Hadith, on the other hand, is a collection of sayings, actions, and teachings of the Prophet Muhammad,  compiled by his companions and later scholars. It serves as a secondary source of Islamic law and ethics, and  is used to provide context and interpretation to the Quran. Some Hadiths that are commonly referenced in  Islamic discourse include:",
+        "include": [
+          "'The best of you is the best to his family, and I am the best of you to my family.' [Sahih At-Tirmidhi]",
+          "'None of you truly believes until he loves for his brother what he loves for himself' [Bukhari and Muslim]",
+          "'Whoever believes in Allah and the Last Day, let him speak good or remain silent' [Bukhari and Muslim]"
+        ]
+      }
+    ],
+    "islamicHConclus": "Both the Quran and Hadith are considered essential sources of guidance for Muslims, and are studied and referenced extensively in Islamic scholarship and discourse.",
+    "threeFund" : "Three Fundamentals"
+
+  }

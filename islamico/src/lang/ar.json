@@ -33,17 +33,43 @@
     "prophetMuh": "النبي محمد",
     "ThreeFund": " الأصول الثلاثة",
     "Sahih": " الصحيحين",
-    "islamicHintro" : "Islam is a monotheistic religion that was founded by the Prophet Muhammad in the 7th century CE. The history of Islam is rich and complex, and spans over a millennium.",
+    "islamicHintro" : "الإسلام دين توحيدي أسسه النبي محمد في القرن السابع الميلادي. تاريخ الإسلام غني ومعقد ، يمتد على مدى ألف عام.",
     "islamicHcycle":[
       {
         "id":1,
-        "title" : "The Early Years of Islam:",
-        "desc" : " Islam began in the Arabian Peninsula, in the city of Mecca, where the Prophet Muhammad was born in 570 CE. Muhammad began receiving revelations from God through the Angel Gabriel when he was 40 years old, and these revelations were later compiled into the Islamic holy book, the Quran. Muhammad preached the message of Islam to the people of Mecca, but was met with resistance from the powerful tribes of the city. He eventually fled to Medina, a city to the north, in what is known as the Hijra, and established the first Islamic state. This event is considered the beginning of the Islamic calendar."
+        "title" : "السنوات الأولى للإسلام:",
+        "desc" : " بدأ الإسلام في شبه الجزيرة العربية ، في مدينة مكة ، حيث ولد النبي محمد عام 570 م. بدأ محمد صلى الله عليه وسلم، في تلقي الوحي من الله من خلال الملاك جبرائيل عندما كان يبلغ من العمر 40 عامًا ، وتم تجميع هذا الوحي لاحقًا في الكتاب الإسلامي المقدس ، القرآن. بشر محمد عليه افضل الصلاة والسلام برسالة الإسلام لأهل مكة ، لكنه قوبل بمقاومة من قبائل المدينة القوية. وفر في النهاية إلى المدينة المنورة ، وهي مدينة تقع في الشمال ، فيما يعرف باسم الهجرة ، وأسس أول دولة إسلامية. يعتبر هذا الحدث بداية التقويم الإسلامي."
       },
       {
         "id":2,
-        "title" : "The Growth and Expansion of Islam:",
-        "desc" : "  After the establishment of the Islamic state in Medina, Islam spread rapidly throughout Arabia and beyond. Within a century of the death of the Prophet Muhammad in 632 CE, Islamic armies had conquered much of the Middle East, North Africa, and Spain. Islamic civilization flourished during this time,  with the development of great cities like Baghdad and Cairo, and the establishment of universities  and centers of learning."
+        "title" : "نمو الإسلام وانتشاره:",
+        "desc" : " بعد قيام الدولة الإسلامية في المدينة المنورة ، انتشر الإسلام بسرعة في جميع أنحاء شبه الجزيرة العربية وخارجها. في غضون قرن من وفاة النبي محمد في عام 632 م ، احتلت الجيوش الإسلامية جزءًا كبيرًا من الشرق الأوسط وشمال إفريقيا وإسبانيا. ازدهرت الحضارة الإسلامية خلال هذا الوقت ، مع تطور المدن الكبرى مثل بغداد والقاهرة ، وإنشاء الجامعات ومراكز التعلم."
       }
-    ]
+    ],
+    "islamicHEss" : [
+      {
+        "id":1,
+        "title": "القرآن",
+        "img": "high-angle-holy-book-with-bracelet.jpg",
+        "desc": "القرآن هو النص الديني المركزي للإسلام ، ويحتوي على كلام الله كما نزل على النبي محمد من خلال الملاك جبرائيل. إنه المصدر الأساسي للشريعة الإسلامية والأخلاق ، ويعتبر آخر وحي من الله للإنسانية. تتضمن بعض الآيات القرآنية التي يشار إليها عادة في الخطاب الإسلامي ما يلي:",
+        "include": [
+          "'لا اله الا الله محمد رسول الله' (القرآن 48:29)",
+          "'لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا' (القرآن 2: 286).",
+          "'يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱدْخُلُوا۟ فِى ٱلسِّلْمِ كَآفَّةًۭ وَلَا تَتَّبِعُوا۟ خُطُوَٰتِ ٱلشَّيْطَـٰنِ ۚ إِنَّهُۥ لَكُمْ عَدُوٌّۭ مُّبِينٌۭ' (القرآن 2: 208)"
+        ]
+      },
+      {
+        "id":2,
+        "img": "top-view-beautiful-rpg-still-life-items.webp",
+        "title": "الحديث النبوي",
+        "desc": "الحديث النبوي هو عبارة عن مجموعة أقوال وأفعال وتعاليم النبي محمد عليه الصلاة والسلام جمعها أصحابه وعلماء لاحقون. إنه بمثابة مصدر ثانوي للشريعة الإسلامية والأخلاق ، ويستخدم لتوفير السياق والتفسير للقرآن. تتضمن بعض الأحاديث التي يشار إليها عادة في الخطاب الإسلامي ما يلي:",
+        "include": [
+          " 'خيركم خيركم لأهله، وأنا خيركم لأهلي' [صحيح الترمذي].",
+          "'لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه' [البخاري ومسلم]",
+          "'من كان يؤمن بالله واليوم الآخر، فليقل خيرًا أو ليصمت' [البخاري ومسلم]"
+        ]
+      }
+    ],
+    "islamicHConclus": "يعتبر كل من القرآن والحديث من المصادر الأساسية لتوجيه المسلمين ، وقد تمت دراستها والإشارة إليها على نطاق واسع في الدراسات والخطاب الإسلامي.",
+    "threeFund" : "الاصول الاثلاثة"
 }

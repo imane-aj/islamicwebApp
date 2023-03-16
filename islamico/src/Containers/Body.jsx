@@ -44,8 +44,8 @@ export const Body = ({t}) => {
           </div>
           <div>
             <h1 className=" text-custom-1 short:text-base short:break-all text-xlg font-bold tracking-tighter">
-              {pageNum == 1 && "History of Islam"}
-              {pageNum == 3 && "3 Fundamentals"}
+              {pageNum == 1 && t('islamicH')}
+              {pageNum == 3 && t('threeFund')}
             </h1>
           </div>
         </div>

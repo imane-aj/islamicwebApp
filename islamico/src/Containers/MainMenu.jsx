@@ -13,19 +13,9 @@ export const MainMenu = ({t, i18n}) => {
   const dispatch = useDispatch()
   const pageNum = useSelector((state)=>state.toggle.num)
 
-  const mainMenuData = (i18n.language === 'ar') 
-  ? menuItemsAr.menuItems.map(item => ({
-    'id' : item.id,
-    'title' : item.title,
-    'desc' : item.desc,
-    'img' : item.img
-  }))
-  : menuItemsEn.menuItems.map(item => ({
-    'id' : item.id,
-    'title' : item.title,
-    'desc' : item.desc,
-    'img' : item.img
-  }));
+  const mainMenuData = (i18n.language === 'ar')
+  ? menuItemsAr.menuItems.map(({ id, title, desc, img }) => ({ id, title, desc, img }))
+  : menuItemsEn.menuItems.map(({ id, title, desc, img }) => ({ id, title, desc, img }));
 
   function toggleBodyStyle() {
     if (i18n.language == "ar") {
@@ -100,7 +90,7 @@ export const MainMenu = ({t, i18n}) => {
                 </h1>
                 <span className=" hidden lg:inline-block md:inline-block text-sm font-bold pr-1">
                   {item.desc.map((item,idx)=>(
-                    <p className="text-slate-600" key = {idx}>{item}</p>
+                    <p className="text-slate-600" key={idx}>{item}</p>
                   ))}
                 </span>
               </div>

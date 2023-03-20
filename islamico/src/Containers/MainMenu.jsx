@@ -1,17 +1,17 @@
 import React, { Fragment, useState } from 'react'
 import { useDispatch, useSelector } from "react-redux";
-import {  PageNum, toggle } from '../Redux/ToggleSlice';
+import {  BodyStyle, PageNum, toggle } from '../Redux/ToggleSlice';
 import {motion} from 'framer-motion';
 import menuItemsAr from '../lang/ar.json'
 import menuItemsEn from '../lang/en.json'
 
 export const MainMenu = ({t, i18n}) => {
-  const [bodyStyle, setBodyStyle] = useState("bg-imgEn");
+  const bodyStyle = useSelector((state)=>state.toggle.bodyStyle);
   const [modalOpen, setModalOpen] = useState(false);
   const close = () => setModalOpen(false);
   const open = () => setModalOpen(true);
   const dispatch = useDispatch()
-  const pageNum = useSelector((state)=>state.toggle.num)
+  const pageNum = useSelector((state)=>state.toggle.num);
 
   const mainMenuData = (i18n.language === 'ar')
   ? menuItemsAr.menuItems.map(({ id, title, desc, img }) => ({ id, title, desc, img }))
@@ -19,11 +19,11 @@ export const MainMenu = ({t, i18n}) => {
 
   function toggleBodyStyle() {
     if (i18n.language == "ar") {
-      setBodyStyle("bg-imgAr");
+      dispatch(BodyStyle("bg-imgAr"));
       document.body.classList.remove("bg-imgEn");
       document.body.classList.add("bg-imgAr");
     } else {
-      setBodyStyle("bg-imgEn");
+      dispatch(BodyStyle("bg-imgEn"));
       document.body.classList.remove("bg-imgAr");
       document.body.classList.add("bg-imgEn");
     }
@@ -76,12 +76,12 @@ export const MainMenu = ({t, i18n}) => {
           <div key = {idx}
           className="flex items-center gap-3 w-full text-lg text-custom-900 border rounded-md border-gray-100 
             p-1 pl-4 lg:h-44 xl:h-36 shadow-lg bg-gray-1 cursor-pointer
-            short:h-[90px] short:justify-center short:items-center short:pl-0
+            short:h-[90px] short:justify-start short:items-center short:pl-2
             relative overflow-hidden z-10 before:content-[''] before:w-[0%] before:h-[800%] before:absolute before:top-[50%] before:left-[50%] before:-translate-y-1/2 before:-translate-x-1/2 before:rotate-45 before:bg-gray-200 before:transition-all before:duration-250 before:-z-10 hover:before:w-[105%]"
                 id="panel" onClick={()=>{dispatch(PageNum(idx+1)) ;dispatch(toggle())}}
               >
               <div className="text-lg md:text-3xl font-semibold text-custom-1 2xl:block h-[50%]">
-                <span className="mr-1"><img src={item?.img} width='50px' alt="icon" /></span>
+                <span><img src={item?.img} width='50px' alt="icon" /></span>
               </div>
               <div className="border-l h-[70%] border-custom-900 pb-1 2xl:block"></div>
               <div className="h-[50%] short:h-auto">

@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { Hadith } from "../Components/Hadith";
 import { toggle } from "../Redux/ToggleSlice";
 import { IslamHistory } from "./../Components/IslamHistory/index";
 import ThreeFund from "./../Components/ThreeFund/index";
@@ -8,8 +9,9 @@ import i18n from './../i18n';
 
 export const Body = ({t}) => {
   const pageNum = useSelector((state) => state.toggle.num);
+  const bodyStyle = useSelector((state)=>state.toggle.bodyStyle);
   const dispatch = useDispatch()
-  console.log(pageNum);
+
   return (
     <div className="hero container mx-auto animate-slideToTop short:flex-row">
       <div className="history md:mx-20 my-4 md:px-14 px-4 py-6 text-gray-700 font-bold bg-white">
@@ -25,21 +27,39 @@ export const Body = ({t}) => {
               hover:border-custom-1 focus:outline-none
               focus:ring-2 focus:ring-offset-2 focus:bg-custom-1"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
-                ></path>
-              </svg>
+              {bodyStyle == "bg-imgEn" &&
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+                  ></path>
+                </svg>
+              }
               <span className="mx-2">{t('backToHome')}</span>
+              {bodyStyle == "bg-imgAr" &&
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"
+                  ></path>
+                </svg>
+              }
             </button>
           </div>
           <div>
@@ -50,7 +70,8 @@ export const Body = ({t}) => {
           </div>
         </div>
         {pageNum == 1 && <IslamHistory t={t} i18n={i18n}/>}
-        {pageNum == 3 && <ThreeFund />}
+        {pageNum == 3 && <ThreeFund t={t} i18n={i18n}/>}
+        {pageNum == 4 && <Hadith t={t} i18n={i18n}/>}
       </div>
     </div>
   );

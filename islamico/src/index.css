@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Akzidenz Roman", Helvetica, Arial, sans-serif;
 }
 .index{
   /* background: url('/indexImg/bg.73a4c602.png') no-repeat 50%/cover; */
@@ -168,13 +169,14 @@ p{
     font-size: 2em;
 }
 .hero .history .span:before {
-    content: "▹";
-    font-size: 1.5em;
-    left: -24px;
+    content: "►";
+    font-size: 1em;
+    left: -14px;
     line-height: 12px;
     position: absolute;
-    top: 4px;
+    top: 1px;
 }
+
 .bg-imgEn{
     /* background-image: url('./assets/background.jpg');
     background-repeat: no-repeat;
@@ -195,8 +197,13 @@ p{
     overflow-x: hidden; 
     background-position: center;
 }
-.mainMenuData{
-  direction: ltr !important;
+.bg-imgAr .hero .history .span:before {
+  content: "◄";
+  font-size: 1em;
+  right: -4px;
+  line-height: 12px;
+  position: absolute;
+  top: 1px;
 }
 
 /* NavBar */

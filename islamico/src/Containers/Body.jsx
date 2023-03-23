@@ -66,6 +66,14 @@ export const Body = ({t}) => {
             <h1 className=" text-custom-1 short:text-base short:break-all text-xlg font-bold tracking-tighter">
               {pageNum == 1 && t('islamicH')}
               {pageNum == 3 && t('threeFund')}
+              {pageNum == 4 && 
+                <ul className="flex gap-5">
+                  <li className="text-gray-800 text-lg hover:cursor-pointer
+                  transition ease-in-out delay-150 hover:-translate-y-1 duration-200"><span className="text-custom-1 pr-1">01</span>. Bukhari</li>
+                  <li className="text-gray-800 text-lg hover:cursor-pointer
+                  transition ease-in-out delay-150 hover:-translate-y-1 duration-200"><span className="text-custom-1 pr-1">02</span>. Muslim</li>
+                </ul>
+              }
             </h1>
           </div>
         </div>

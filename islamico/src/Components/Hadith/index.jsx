@@ -3,7 +3,7 @@ import { Select } from './Select'
 
 export const Hadith = () => {
     return (
-        <div className='container md:w-3/5 m-auto mt-14'>
+        <div className='container md:w-4/5 m-auto mt-14'>
             <Select />
         <div className="AllHadith single_hadith border rounded-md border-gray-100 py-10">
             <div className="chapter flex flex-col md:flex-row md:justify-between p-3 mb-3">

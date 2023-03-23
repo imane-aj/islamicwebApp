@@ -44,7 +44,6 @@ export const MainMenu = ({t, i18n}) => {
               whileTap={{scale:0.9}} onClick={()=>{i18n.changeLanguage('ar'),toggleBodyStyle()}}>
                   <span className='text-custom-1 border border-custom-1'>{t('ar')}</span>
                 </motion.button>}
-              {/* <span className='text-custom-1 border border-custom-1'>Let’s Know Islam</span> */}
             </div>
             <div className="slide-title md:max-w-2xl  md:text-6xl text-5xl">
               <h2>{t('titleLandingP')}</h2>

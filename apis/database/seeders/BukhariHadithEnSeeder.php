@@ -15,7 +15,7 @@ class BukhariHadithEnSeeder extends Seeder
     public function run(): void
     {
         //
-        $jsonEn = Storage::disk('local')->get('/json/bukhariHadithEn.json');
+        $jsonEn = Storage::disk('local')->get('/json/bukhari/bukhariHadithEn.json');
         $hadith = json_decode($jsonEn, true);
 
         foreach ($hadith as $items) {

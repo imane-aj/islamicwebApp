@@ -15,7 +15,7 @@ class BukhariBookSeeder extends Seeder
     public function run(): void
     {
         //
-        $json = Storage::disk('local')->get('/json/bukhariBook.json');
+        $json = Storage::disk('local')->get('/json/bukhari/bukhariBook.json');
         $books = json_decode($json, true);
         
         $booksAr = $books['books']['booksAr'];

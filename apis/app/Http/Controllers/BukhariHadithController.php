@@ -11,7 +11,7 @@ use Illuminate\Http\RedirectResponse;
 
 use function PHPSTORM_META\map;
 
-class BukhariHadith extends Controller
+class BukhariHadithController extends Controller
 {
     /**
      * Display a listing of the resource.
